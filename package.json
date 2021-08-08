@@ -1,27 +1,39 @@
 {
-  "name": "kebra",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Frontity project",
-  "keywords": [
-    "frontity"
-  ],
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
-  },
-  "scripts": {
-    "dev": "frontity dev",
-    "build": "frontity build",
-    "serve": "frontity serve"
-  },
-  "prettier": {},
-  "dependencies": {
-    "frontity": "^1.17.0",
-    "@frontity/core": "^1.14.3",
-    "@frontity/wp-source": "^1.11.5",
-    "@frontity/tiny-router": "^1.4.4",
-    "@frontity/html2react": "^1.7.0",
-    "@frontity/mars-theme": "./packages/mars-theme"
-  }
+	"name": "kebra",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Frontity project",
+	"keywords": [
+		"frontity"
+	],
+	"engines": {
+		"node": ">=10.0.0",
+		"npm": ">=6.0.0"
+	},
+	"scripts": {
+		"dev": "frontity dev",
+		"build": "frontity build",
+		"serve": "frontity serve"
+	},
+	"prettier": {
+		"trailingComma": "none",
+		"tabWidth": 8,
+		"semi": true,
+		"singleQuote": true,
+		"useTabs": true
+	},
+	"dependencies": {
+		"@aamodtgroup/frontity-contact-form-7": "^0.2.7",
+		"@fancyapps/ui": "^4.0.0-beta.0",
+		"@frontity/core": "^1.14.3",
+		"@frontity/html2react": "^1.7.0",
+		"@frontity/tiny-router": "^1.4.4",
+		"@frontity/wp-source": "^1.11.5",
+		"frontity": "^1.17.0",
+		"kebra-theme": "file:packages/kebra-theme",
+		"react-fancybox": "^0.2.5",
+		"react-slick": "^0.28.1",
+		"react-slide-toggle": "^0.3.5",
+		"slick-carousel": "^1.8.1"
+	}
 }

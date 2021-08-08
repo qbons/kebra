@@ -1,57 +1,29 @@
 const settings = {
-  "name": "kebra",
-  "state": {
-    "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
-    }
-  },
-  "packages": [
-    {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
-      }
-    },
-    {
-      "name": "@frontity/wp-source",
-      "state": {
-        "source": {
-          "url": "https://test.frontity.org"
-        }
-      }
-    },
-    "@frontity/tiny-router",
-    "@frontity/html2react"
-  ]
+	name: 'EmployerBranding',
+	state: {
+		frontity: {
+			url: 'https://eb2.demoapp.xyz/',
+			title: 'Employer Branding',
+			description:
+				'WordPress Theme for Kalibrr Employer Branding'
+		}
+	},
+	packages: [
+		{
+			name: 'kebra-theme'
+		},
+		{
+			name: '@frontity/wp-source',
+			state: {
+				source: {
+					url: 'https://eb2.demoapp.xyz/'
+				}
+			}
+		},
+		'@aamodtgroup/frontity-contact-form-7',
+		'@frontity/tiny-router',
+		'@frontity/html2react'
+	]
 };
 
 export default settings;
