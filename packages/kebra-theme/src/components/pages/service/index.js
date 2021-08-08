@@ -6,12 +6,15 @@ import SolutionItem from './solution-item';
 
 import ContactForm, {ContactFormHeader} from '../../partial/contact-form';
 
+import HeadMeta from '../../head-meta';
+
 const Service = ({state, libraries}) => {
         const req = state.source.get(state.router.link);
         const content = req.data.content;
         const Html2React = libraries.html2react.Component;
         return (
                 <>
+                        <HeadMeta/>
                         <div className="inner-service">
                                 {(content.img1 != '' || content.title1 != '' || content.txt1 != '') && 
                                         <div className="copy">

@@ -9,12 +9,15 @@ import Banner from './banner';
 import ContactForm, {ContactFormHeader} from '../../partial/contact-form';
 import SectionBlog from '../../partial/section-blog';
 
+import HeadMeta from '../../head-meta';
+
 const CaseStudySingle = ({state, libraries}) => {
         const req = state.source.get(state.router.link);
         const content = req.data;
         const Html2React = libraries.html2react.Component;
         return (
                 <>
+                        <HeadMeta/>
                         <div className="detail-case">
                                 {(content.logo != '' || content.subtitle != '' || content.title != '') && 
                                         <div className="heading">

@@ -9,12 +9,15 @@ import Copycon from '../case-studies/copycon';
 
 import ContactForm, {ContactFormHeader} from '../../partial/contact-form';
 
+import HeadMeta from '../../head-meta';
+
 const ServiceSingle = ({state, libraries}) => {
         const req = state.source.get(state.router.link);
         const content = req.data;
         const Html2React = libraries.html2react.Component;
         return (
                 <>
+                        <HeadMeta/>
                         <div className="detail-service">
                                 <div className="intro">
                                         <div className="wrapper">

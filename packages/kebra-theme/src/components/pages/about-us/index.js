@@ -4,6 +4,7 @@ import Image from "@frontity/components/image";
 import Team from './team';
 
 import ContactForm, {ContactFormHeader} from '../../partial/contact-form';
+import HeadMeta from '../../head-meta';
 
 
 const AboutUs = ({state, libraries}) => {
@@ -20,6 +21,7 @@ const AboutUs = ({state, libraries}) => {
         }
         return (
                 <>
+                        <HeadMeta/>
                         <div className="inner-about">
                                 <div className="copy">
                                         <div className="wrapper rowflex">

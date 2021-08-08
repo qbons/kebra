@@ -1,11 +1,14 @@
 import { connect } from "frontity";
 
+import HeadMeta from '../../head-meta';
+
 const Regular = ({state, libraries}) => {
         const req = state.source.get(state.router.link);
         const Html2React = libraries.html2react.Component;
         const data  = req.data;
         return(
                 <>
+                        <HeadMeta/>
                         <div className="detail-service">
                                 <div className="intro">
                                         <div className="wrapper">

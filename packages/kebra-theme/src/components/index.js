@@ -1,7 +1,6 @@
 import {connect} from "frontity";
 
 import Styling from "./styling";
-import HeadMeta from './head-meta';
 import Header from './header';
 import Body from "./body";
 import Footer from "./footer";
@@ -13,7 +12,6 @@ const Root = ({state, actions}) => {
 	return(
 		<>
                         <Styling/>
-			<HeadMeta/>
 			<div id="shell" className={classes}>
 				<Header/>
 				<Body/>

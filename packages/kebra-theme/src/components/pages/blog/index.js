@@ -2,6 +2,8 @@ import { connect, fetch, css  } from 'frontity';
 import { useState, useRef } from "react";
 import Loadmore from './loadmore';
 
+import HeadMeta from '../../head-meta';
+
 const parseLoadMore = (rawBlog) => {
 	let blogs = [];
 	rawBlog.map((item, index) => {
@@ -66,8 +68,8 @@ const Blog = ({ state, actions, libraries }) => {
         }
 	return (
 		<>
+			<HeadMeta/>
 			<div className={isLoading ? "inner-blog fetching" : "inner-blog" }>
-				
 				<div className="wrapper">
 					<div className="subscribe">
 						{content.subtitle != '' &&<span>{content.subtitle}</span>}
@@ -104,7 +106,7 @@ const Blog = ({ state, actions, libraries }) => {
 							</fieldset>
 						</form>
 					</div>
-					{blog.length > 0 &&
+					{(typeof blog !== "undefined" && blog.length > 0) &&
 						<div className="blog-list rowflex">
 							{blog.map((item, index) => {
 								return(

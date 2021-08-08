@@ -4,12 +4,15 @@ import Image from "@frontity/components/image";
 import Carousel from './carousel';
 import ContactForm, {ContactFormHeader} from '../../partial/contact-form';
 
+import HeadMeta from '../../head-meta';
+
 const Testimonial = ({state, libraries}) => {        
         const req = state.source.get(state.router.link);
         const content = req.data.content;        
         const Html2React = libraries.html2react.Component;
         return (
                 <>
+                        <HeadMeta/>
                         <div className="inner-testi">
                                 <div className="caro">
                                         <div className="hentry orn1">

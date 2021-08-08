@@ -6,7 +6,7 @@ const SectionBlog = ({state}) => {
         const blog = data.content;
         return(
                 <>
-                        {blog.length > 0 &&
+                        {(typeof blog !== "undefined" && blog.length > 0) &&
                                 <div className="blog-section">
                                         <div className="wrapper">
                                                 <div className="rowflex">

@@ -5,6 +5,8 @@ import Image from "@frontity/components/image";
 import ContactForm, {ContactFormHeader} from '../../partial/contact-form';
 import SectionBlog from '../../partial/section-blog';
 
+import HeadMeta from '../../head-meta';
+
 const CaseStudies = ({ state, libraries }) => {
 	const req = state.source.get(state.router.link);
         const content = req.data.content;
@@ -12,6 +14,7 @@ const CaseStudies = ({ state, libraries }) => {
 	
 	return (
 		<>
+			<HeadMeta/>
 			<div className="inner-case">
 				{(content.ctitle != '' || content.csubtitle != '') && 
 					<div className="intro cvr-bg-bf">
