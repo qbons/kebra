@@ -29,8 +29,8 @@ const kebraTheme = {
 			beforeSSR: async ({ state, actions }) => {
 				await Promise.all([
 					actions.source.fetch("option", {force: false}),
-					actions.theme.fetchBlog(),
-					actions.theme.fetchBlogSection()
+					//actions.theme.fetchBlog(),
+					//actions.theme.fetchBlogSection()
 				]);
 			},
 			fetchBlog: async ({ state, actions }) => {

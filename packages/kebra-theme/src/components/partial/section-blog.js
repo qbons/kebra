@@ -4,6 +4,7 @@ import { connect, css  } from 'frontity';
 const SectionBlog = ({state}) => {
         const data = state.theme.blogSection.data;
         const blog = data.content;
+        return '';
         return(
                 <>
                         {(typeof blog !== "undefined" && blog.length > 0) &&
